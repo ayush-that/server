@@ -15,8 +15,6 @@ const app = express();
 // Configure the server
 app.use(express.json());
 app.use(cors());
-
-// Connect to the database
 connectDB();
 
 app.get("/notes", notesController.fetchNotes);
